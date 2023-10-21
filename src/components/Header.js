@@ -1,10 +1,12 @@
 import React from 'react';
+import Navigation from "./Navigation";
 
 const Header = () => {
     return (
-        <div>
-            
-        </div>
+        <header className="rounded-top-5">
+            <Navigation/>
+            <h1 className="text-center fs-1 py-4">Luke Skywalker</h1>
+        </header>
     );
 };
 
