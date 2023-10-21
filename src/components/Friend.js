@@ -9,7 +9,7 @@ import friend7 from "../styles/images/friend7.jpg";
 import friend8 from "../styles/images/friend8.jpg";
 import friend9 from "../styles/images/friend9.jpg";
 
-const Friends = () => {
+const Friend = () => {
     return (
         <div>
             <img className="col-4 p-1" src={friend1} alt="friend" />
@@ -26,4 +26,4 @@ const Friends = () => {
     );
 };
 
-export default Friends;
+export default Friend;
