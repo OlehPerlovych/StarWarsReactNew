@@ -1,9 +1,10 @@
 import React from 'react';
+import hero from '../styles/images/main.jpg';
 
 const Hero = () => {
     return (
         <section className="float-start w-25 my-1 mx-3">
-            <img src="../styles/images/main.jpg" className="w-100" alt={'hero'}/>
+            <img className="w-100" src={hero} alt="hero" />
         </section>
     );
 };
