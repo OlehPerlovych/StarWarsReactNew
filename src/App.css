@@ -21,11 +21,11 @@ header
 {
     box-shadow: rgba(60, 69, 67, 0.6) 10px 10px;
 }
-#left
+.left
 {
     border-bottom-left-radius: 15px;
 }
-#right
+.right
 {
     border-bottom-right-radius: 15px;
 }
@@ -40,6 +40,14 @@ footer
 {
     background-color: rgba(60, 69, 67, 0.6);
 }
+
+
+
+
+
+
+
+
 
 
 
