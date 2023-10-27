@@ -23,6 +23,7 @@ export const text = `title: The Empire Strikes Back episode: 5 release_date: 198
             Darth Vader, obsessed with finding young Skywalker, has dispatched thousands of remote probes into
             the far
             reaches of space.... `
+export const url = 'https://sw-info-api.herokuapp.com/v1/';
 
 
 
