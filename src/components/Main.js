@@ -1,16 +1,19 @@
 import React from 'react';
-import Hero from "./Hero";
-import FarGalaxy from "./FarGalaxy";
-import Friends from "./Friends";
+import {navItems} from "../utils/constants";
+import AboutMe from "./AboutMe";
+import StarWars from "./StarWars";
+import Contact from "./Contact";
+import Home from "./Home";
 
-const Main = () => {
-    return (
-        <main className="clearfix">
-            <Hero/>
-            <Friends/>
-            <FarGalaxy/>
-        </main>
-    );
+const Main = ({page}) =>
+{
+    switch (page)
+    {
+        case navItems[1]: return <AboutMe/>
+        case navItems[2]: return <StarWars/>
+        case navItems[3]: return <Contact/>
+        default: return <Home/>
+    }
 };
 
 export default Main;

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="680df8bd-840b-4f91-b88e-f5fa99323ae6" name="Changes" comment="Add footer.module.css and import style to Footer">
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FarGalaxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FarGalaxy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2X4IFFp9lyCjW13zhz4ZEj1sFdW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/New/WebstormProjects/36.star-wars-react",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\New\WebstormProjects\StarWarsReactNew\src\utils" />
+      <recent name="C:\Users\New\WebstormProjects\StarWarsReactNew\src\styles" />
+      <recent name="C:\Users\New\WebstormProjects\StarWarsReactNew\src\components" />
+      <recent name="C:\Users\New\WebstormProjects\StarWarsReactNew\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\New\WebstormProjects\StarWarsReactNew\src\components\footer" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="680df8bd-840b-4f91-b88e-f5fa99323ae6" name="Changes" comment="" />
+      <created>1697881819918</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697881819918</updated>
+      <workItem from="1697881821934" duration="2766000" />
+      <workItem from="1697990458889" duration="261000" />
+      <workItem from="1698159641688" duration="2751000" />
+      <workItem from="1698385057068" duration="47000" />
+      <workItem from="1698385166675" duration="138000" />
+      <workItem from="1698388559304" duration="3492000" />
+    </task>
+    <task id="LOCAL-00001" summary="Creating template for new React App.">
+      <option name="closed" value="true" />
+      <created>1697881998949</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697881998949</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding favicon and title of the App">
+      <option name="closed" value="true" />
+      <created>1697882185128</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697882185128</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding structure of components of the app">
+      <option name="closed" value="true" />
+      <created>1697882521965</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697882521965</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add pictures of the App">
+      <option name="closed" value="true" />
+      <created>1697882602454</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697882602454</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add constants">
+      <option name="closed" value="true" />
+      <created>1697882659269</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697882659269</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Head of the App">
+      <option name="closed" value="true" />
+      <created>1697883195310</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697883195310</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Components and logic of rendering of pages and components">
+      <option name="closed" value="true" />
+      <created>1697883508074</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697883508074</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add bootstrap library">
+      <option name="closed" value="true" />
+      <created>1697883680526</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697883680526</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Changes in component Friend. Name of const and export">
+      <option name="closed" value="true" />
+      <created>1697884510410</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1697884510410</updated>
+    </task>
+    <task id="LOCAL-00010" summary="improvement of Hero in import of pictures">
+      <option name="closed" value="true" />
+      <created>1698160952482</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1698160952483</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add constant of &lt;p&gt; in FarGalaxy.">
+      <option name="closed" value="true" />
+      <created>1698161605218</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698161605218</updated>
+    </task>
+    <task id="LOCAL-00012" summary="import of picture in Hero">
+      <option name="closed" value="true" />
+      <created>1698161807570</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1698161807570</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add footer.module.css and import style to Footer">
+      <option name="closed" value="true" />
+      <created>1698162131471</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1698162131471</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add footer.module.css and import style to Footer">
+      <option name="closed" value="true" />
+      <created>1698162199919</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1698162199919</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creating template for new React App." />
+    <MESSAGE value="Adding favicon and title of the App" />
+    <MESSAGE value="Adding structure of components of the app" />
+    <MESSAGE value="Add pictures of the App" />
+    <MESSAGE value="Add constants" />
+    <MESSAGE value="Head of the App" />
+    <MESSAGE value="Components and logic of rendering of pages and components" />
+    <MESSAGE value="Add bootstrap library" />
+    <MESSAGE value="Changes in component Friend. Name of const and export" />
+    <MESSAGE value="improvement of Hero in import of pictures" />
+    <MESSAGE value="Add constant of &lt;p&gt; in FarGalaxy." />
+    <MESSAGE value="import of picture in Hero" />
+    <MESSAGE value="Add footer.module.css and import style to Footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add footer.module.css and import style to Footer" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/utils/constants.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
