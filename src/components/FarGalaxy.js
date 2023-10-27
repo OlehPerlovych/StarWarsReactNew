@@ -11,18 +11,36 @@ class FarGalaxy extends Component
 
     componentDidMount()
     {
-        fetch(`${url}films`)
-            .then(response => response.json())
-            .then(data =>
-            {
-                let episode = Math.floor(Math.random() * data.length);
-                this.setState(
-                    {
-                        isLoading: false,
-                        filmTitle: data[episode].title,
-                        filmData: data[episode].opening_crawl
-                    });
-            })
+        const filmTitle = sessionStorage.getItem('filmTitle');
+        const filmData = sessionStorage.getItem('filmData');
+
+        if(filmTitle && filmData)
+        {
+            this.setState(
+                {
+                    isLoading: false,
+                    filmTitle,
+                    filmData
+                });
+        }
+        else
+        {
+            fetch(`${url}films`)
+                .then(response => response.json())
+                .then(data =>
+                {
+                    let episode = Math.floor(Math.random() * data.length);
+                    this.setState(
+                        {
+                            isLoading: false,
+                            filmTitle: data[episode].title,
+                            filmData: data[episode].opening_crawl
+                        });
+                    sessionStorage.setItem('filmTitle', data[episode].title);
+                    sessionStorage.setItem('filmData',data[episode].opening_crawl);
+                })
+        }
+
 
         // let episode = Math.floor(Math.random() * countOfEpisodes) + 1;
         //     fetch(`${url}films/${episode}`)
