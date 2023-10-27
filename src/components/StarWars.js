@@ -1,11 +1,11 @@
 import React from 'react';
+import {StarWarsText} from "../utils/constants";
 
-const StarWars = () =>
-{
+const StarWars = () => {
     return (
-        <div>
-            StarWars
-        </div>
+        <p>
+            {StarWarsText}
+        </p>
     );
 };
 
