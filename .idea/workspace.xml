@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="680df8bd-840b-4f91-b88e-f5fa99323ae6" name="Changes" comment="Cookies and sessionStorage in FarGalaxy">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AboutMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -64,6 +66,7 @@
       <recent name="C:\Users\New\WebstormProjects\StarWarsReactNew\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\StarWarsReactNew\src\components\contact" />
       <recent name="C:\Users\New\WebstormProjects\StarWarsReactNew\src\components\footer" />
     </key>
   </component>
@@ -82,6 +85,7 @@
       <workItem from="1698385166675" duration="138000" />
       <workItem from="1698388559304" duration="8961000" />
       <workItem from="1698503237561" duration="49000" />
+      <workItem from="1698571024794" duration="5405000" />
     </task>
     <task id="LOCAL-00001" summary="Creating template for new React App.">
       <option name="closed" value="true" />

@@ -2,7 +2,7 @@ import React from 'react';
 import {navItems} from "../utils/constants";
 import AboutMe from "./AboutMe";
 import StarWars from "./StarWars";
-import Contact from "./Contact";
+import Contact from "./contact/Contact";
 import Home from "./Home";
 
 const Main = ({page}) =>
