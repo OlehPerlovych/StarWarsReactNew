@@ -69,7 +69,7 @@ class Contact extends Component {
                     <label htmlFor="subject">Subject</label>
                     <textarea id="subject" name="subject" placeholder="Write something.." style={{ height: "200px" }} className={styles.inputField}></textarea>
 
-                    <input className='btn btn-danger border border-light rounded-pill mx-1 common-button' value="Submit"/>
+                    <input className='btn btn-danger border border-light rounded-pill mx-1 common-button' value="Submit" onClick={()=>alert('Button')}/>
                 </form>
             </div>
         );
