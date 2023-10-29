@@ -28,7 +28,7 @@ class Contact extends Component {
                 });
             })
             .catch(error => alert(error));
-    };
+    }
 
     checkAndUpdatePlanets = () => {
         const lastUpdate = localStorage.getItem('lastUpdate');
