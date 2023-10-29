@@ -1,34 +1,28 @@
 import React, {Component} from 'react';
 import {url} from "../utils/constants";
+import Spinner from 'react-bootstrap/Spinner';
 
-class FarGalaxy extends Component
-{
-    constructor(props)
-    {
+class FarGalaxy extends Component {
+    constructor(props) {
         super(props);
         this.state = {isLoading: true};
     }
 
-    componentDidMount()
-    {
+    componentDidMount() {
         const filmTitle = sessionStorage.getItem('filmTitle');
         const filmData = sessionStorage.getItem('filmData');
 
-        if(filmTitle && filmData)
-        {
+        if (filmTitle && filmData) {
             this.setState(
                 {
                     isLoading: false,
                     filmTitle,
                     filmData
                 });
-        }
-        else
-        {
+        } else {
             fetch(`${url}films`)
                 .then(response => response.json())
-                .then(data =>
-                {
+                .then(data => {
                     let episode = Math.floor(Math.random() * data.length);
                     this.setState(
                         {
@@ -37,7 +31,7 @@ class FarGalaxy extends Component
                             filmData: data[episode].opening_crawl
                         });
                     sessionStorage.setItem('filmTitle', data[episode].title);
-                    sessionStorage.setItem('filmData',data[episode].opening_crawl);
+                    sessionStorage.setItem('filmData', data[episode].opening_crawl);
                 })
         }
 
@@ -57,18 +51,25 @@ class FarGalaxy extends Component
         //         .catch(e => alert(e))
     }
 
-    render()
-    {
-        if(this.state.isLoading)
-            return <p className="far-galaxy">'Loading...'</p>
-        else
+    render() {
+        if (this.state.isLoading) {
+            return (
+                <div className="text-center">
+                    <Spinner animation="border" role="status">
+                        <span className="sr-only">Loading...</span>
+                    </Spinner>
+                </div>
+            );
+        } else {
             return (
                 <div>
                     <h1 style={{textTransform: "uppercase", textAlign: "center"}}>{this.state.filmTitle}</h1>
                     <p className="far-galaxy">{this.state.filmData}</p>
-                </div>)
+                </div>
+            );
+        }
     }
-}
 
+}
 export default FarGalaxy;
 
