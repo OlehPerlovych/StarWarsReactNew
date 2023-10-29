@@ -31,12 +31,11 @@ class AboutMe extends Component {
             .then((response) => response.json())
             .then((data) => {
                 this.setState(data);
-                localStorage.setItem('hero', JSON.stringify({ info: data, timeStamp: Date.now() }));
+                localStorage.setItem('hero', JSON.stringify({ info: data, timeStamp: Date.now()}));
             })
-            .catch((error) => {
-                console.error('Error fetching data:', error);
-            });
-    }
+            .catch(error => alert(error));
+    };
+
     render() {
         return (
             <div>

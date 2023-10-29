@@ -33,6 +33,7 @@ class FarGalaxy extends Component {
                     sessionStorage.setItem('filmTitle', data[episode].title);
                     sessionStorage.setItem('filmData', data[episode].opening_crawl);
                 })
+                .catch(error => alert(error));
         }
 
 

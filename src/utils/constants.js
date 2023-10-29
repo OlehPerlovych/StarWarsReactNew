@@ -13,7 +13,8 @@ export const friends = [friend1, friend2, friend3, friend4, friend5, friend6, fr
 export const navItems = ['Home', 'About me', 'Star Wars', 'Contact'];
 export const url = 'https://sw-info-api.herokuapp.com/v1/';
 
-export const period = 1000*60*60*24*30;
+export const period = 1000 * 60 * 60 * 24 * 30;
+export const periodForPlanets = 1000 * 60 * 60 * 24 * 10;
 
 export const StarWarsText = `Star Wars is an American epic space opera media franchise created by George Lucas,
 which began with the eponymous 1977 film and quickly became a worldwide pop culture phenomenon. The franchise has 

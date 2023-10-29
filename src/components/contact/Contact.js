@@ -1,7 +1,52 @@
 import React, { Component } from 'react';
-import styles from './contact.module.css'
+import styles from './contact.module.css';
+import {periodForPlanets, url} from "../../utils/constants";
 
 class Contact extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            planets: [],
+            lastUpdate: null,
+        };
+    }
+
+    componentDidMount() {
+        this.checkAndUpdatePlanets();
+    }
+
+    fetchPlanets = () => {
+        fetch(`${url}planets`)
+            .then((response) => response.json())
+            .then(data => {
+                const planetNames = data.map(planet => planet.name);
+                localStorage.setItem('planets', JSON.stringify(planetNames));
+                localStorage.setItem('lastUpdate', Date.now().toString());
+                this.setState({
+                    planets: planetNames,
+                    lastUpdate: Date.now(),
+                });
+            })
+            .catch(error => alert(error));
+    };
+
+    checkAndUpdatePlanets = () => {
+        const lastUpdate = localStorage.getItem('lastUpdate');
+        if (!lastUpdate) {
+            this.fetchPlanets();
+        } else {
+            if (Date.now() - lastUpdate >= periodForPlanets) {
+                this.fetchPlanets();
+            } else {
+                const storedPlanets = JSON.parse(localStorage.getItem('planets'));
+                this.setState({
+                    planets: storedPlanets,
+                    lastUpdate: lastUpdate,
+                });
+            }
+        }
+    };
+
     render() {
         return (
             <div>
@@ -12,11 +57,13 @@ class Contact extends Component {
                     <label htmlFor="lname">Last Name</label>
                     <input type="text" id="lname" name="lastname" placeholder="Your last name.." className={styles.inputField} />
 
-                    <label htmlFor="country">Country</label>
-                    <select id="country" name="country" className={styles.inputField}>
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
+                    <label htmlFor="planet">Planet</label>
+                    <select id="planet" name="planet" className={styles.inputField}>
+                        {this.state.planets.map((planet, index) => (
+                            <option key={index} value={planet}>
+                                {planet}
+                            </option>
+                        ))}
                     </select>
 
                     <label htmlFor="subject">Subject</label>
