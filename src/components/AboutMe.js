@@ -26,12 +26,14 @@ class AboutMe extends Component {
         }
     }
 
-    fetchDataFromAPI() {
+    fetchDataFromAPI()
+    {
         fetch(`${url}peoples/1`)
             .then((response) => response.json())
-            .then((data) => {
-                this.setState(data);
+            .then((data) =>
+            {
                 localStorage.setItem('hero', JSON.stringify({ info: data, timeStamp: Date.now()}));
+                this.setState(data);
             })
             .catch(error => alert(error));
     };
