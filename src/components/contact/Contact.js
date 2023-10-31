@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './contact.module.css';
-import {periodForPlanets, url} from "../../utils/constants";
+import {LAST_UPDATE, periodForPlanets, PLANETS, url} from "../../utils/constants";
 
 class Contact extends Component {
     constructor(props) {
@@ -20,8 +20,8 @@ class Contact extends Component {
             .then((response) => response.json())
             .then(data => {
                 const planetNames = data.map(planet => planet.name);
-                localStorage.setItem('planets', JSON.stringify(planetNames));
-                localStorage.setItem('lastUpdate', Date.now().toString());
+                localStorage.setItem(PLANETS, JSON.stringify(planetNames));
+                localStorage.setItem(LAST_UPDATE, Date.now().toString());
                 this.setState({
                     planets: planetNames,
                     lastUpdate: Date.now(),
@@ -31,14 +31,14 @@ class Contact extends Component {
     }
 
     checkAndUpdatePlanets = () => {
-        const lastUpdate = localStorage.getItem('lastUpdate');
+        const lastUpdate = localStorage.getItem(LAST_UPDATE);
         if (!lastUpdate) {
             this.fetchPlanets();
         } else {
             if (Date.now() - lastUpdate >= periodForPlanets) {
                 this.fetchPlanets();
             } else {
-                const storedPlanets = JSON.parse(localStorage.getItem('planets'));
+                const storedPlanets = JSON.parse(localStorage.getItem(PLANETS));
                 this.setState({
                     planets: storedPlanets,
                     lastUpdate: lastUpdate,

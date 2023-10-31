@@ -19,6 +19,11 @@ export const HERO = 'hero';
 export const FILM_TITLE= 'filmTitle';
 export const FILM_DATA= 'filmData';
 
+export const PLANETS= 'planets';
+
+export const LAST_UPDATE = 'lastUpdate';
+
+
 export const StarWarsText = `Star Wars is an American epic space opera media franchise created by George Lucas,
 which began with the eponymous 1977 film and quickly became a worldwide pop culture phenomenon. The franchise has 
 been expanded into various films and other media, including television series, video games, novels, comic books, theme 
