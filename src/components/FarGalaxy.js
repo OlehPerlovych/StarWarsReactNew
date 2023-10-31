@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {url} from "../utils/constants";
+import {FILM_TITLE, FILM_DATA, url} from "../utils/constants";
 import Spinner from 'react-bootstrap/Spinner';
 
 class FarGalaxy extends Component {
@@ -9,8 +9,8 @@ class FarGalaxy extends Component {
     }
 
     componentDidMount() {
-        const filmTitle = sessionStorage.getItem('filmTitle');
-        const filmData = sessionStorage.getItem('filmData');
+        const filmTitle = sessionStorage.getItem(FILM_TITLE);
+        const filmData = sessionStorage.getItem(FILM_DATA);
 
         if (filmTitle && filmData) {
             this.setState(
@@ -30,8 +30,8 @@ class FarGalaxy extends Component {
                             filmTitle: data[episode].title,
                             filmData: data[episode].opening_crawl
                         });
-                    sessionStorage.setItem('filmTitle', data[episode].title);
-                    sessionStorage.setItem('filmData', data[episode].opening_crawl);
+                    sessionStorage.setItem(FILM_TITLE, data[episode].title);
+                    sessionStorage.setItem(FILM_DATA, data[episode].opening_crawl);
                 })
                 .catch(error => alert(error));
         }

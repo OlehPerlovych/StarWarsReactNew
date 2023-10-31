@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { period, url } from "../utils/constants";
+import {HERO, period, url} from "../utils/constants";
 
 class AboutMe extends Component {
     constructor(props) {
@@ -17,7 +17,7 @@ class AboutMe extends Component {
     }
 
     componentDidMount() {
-        const hero = JSON.parse(localStorage.getItem('hero'));
+        const hero = JSON.parse(localStorage.getItem(HERO));
 
         if (!hero || (Date.now() - hero.timeStamp) > period) {
             this.fetchDataFromAPI();
@@ -32,7 +32,7 @@ class AboutMe extends Component {
             .then((response) => response.json())
             .then((data) =>
             {
-                localStorage.setItem('hero', JSON.stringify({ info: data, timeStamp: Date.now()}));
+                localStorage.setItem(HERO, JSON.stringify({ info: data, timeStamp: Date.now()}));
                 this.setState(data);
             })
             .catch(error => alert(error));
