@@ -9,39 +9,27 @@ import friend8 from '../styles/images/friends/friend8.jpg';
 import friend9 from '../styles/images/friends/friend9.jpg';
 
 export const friends = [friend1, friend2, friend3, friend4, friend5, friend6, friend7, friend8, friend9];
-
 export const navItems = ['Home', 'About me', 'Star Wars', 'Contact'];
 export const url = 'https://sw-info-api.herokuapp.com/v1/';
-
 export const period = 1000 * 60 * 60 * 24 * 30;
 export const periodForPlanets = 1000 * 60 * 60 * 24 * 10;
 export const HERO = 'hero';
-export const FILM_TITLE= 'filmTitle';
-export const FILM_DATA= 'filmData';
-
 export const PLANETS= 'planets';
-
 export const LAST_UPDATE = 'lastUpdate';
-
-
-export const StarWarsText = `Star Wars is an American epic space opera media franchise created by George Lucas,
-which began with the eponymous 1977 film and quickly became a worldwide pop culture phenomenon. The franchise has 
-been expanded into various films and other media, including television series, video games, novels, comic books, theme 
-park attractions, and themed areas, comprising an all-encompassing fictional universe.Star Wars is one of the 
-highest-grossing media franchises of all time.
-The original 1977 film, retroactively subtitled Episode IV: 
-A New Hope, was followed by the sequels Episode V: 
-The Empire Strikes Back (1980) and Episode VI: Return of the Jedi (1983), forming the original Star Wars trilogy. 
-Lucas later returned to the series to write and direct a prequel trilogy, 
-consisting of Episode I: The Phantom Menace (1999), Episode II: Attack of the Clones (2002), 
-and Episode III: Revenge of the Sith (2005). In 2012, Lucas sold his production company to Disney, 
-relinquishing his ownership of the franchise. This led to a sequel trilogy, 
-consisting of Episode VII: The Force Awakens (2015), Episode VIII: The Last Jedi (2017), 
-and Episode IX: The Rise of Skywalker (2019).
-All nine films, collectively referred to as the "Skywalker Saga", were nominated for Academy Awards, 
-with wins going to the first two releases. Together with the theatrical live action "anthology" films Rogue One (2016) 
-and Solo (2018), the combined box office revenue of the films equated to over US$10 billion, 
-making Star Wars the third-highest-grossing film franchise of all time.`
+export const StarWarsText = 'title: The Empire Strikes Back episode: 5 release_date: 1980-05-17 opening\n' +
+    '            crawl: It is\n' +
+    '            a dark\n' +
+    '            time for the\n' +
+    '            Rebellion. Although the Death Star has been destroyed, Imperial troops have driven the Rebel forces\n' +
+    '            from their\n' +
+    '            hidden base and pursued them across the galaxy. Evading the dreaded Imperial Starfleet, a group of\n' +
+    '            freedom\n' +
+    '            fighters led by Luke Skywalker has established a new secret base on the remote ice world of Hoth.\n' +
+    '            The evil\n' +
+    '            lord\n' +
+    '            Darth Vader, obsessed with finding young Skywalker, has dispatched thousands of remote probes into\n' +
+    '            the far\n' +
+    '            reaches of space.... ';
 
 
 
