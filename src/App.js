@@ -3,23 +3,34 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/footer/Footer";
 import {navItems} from "./utils/constants";
+import {SWContext} from "./utils/context"
 import './App.css';
 
-class App extends Component
-{ constructor(props) {
+class App extends Component {
+    constructor(props) {
     super(props);
-    this.state = {activePage: navItems[0]}
+    this.state =
+        {
+            activePage: navItems[0]
+        }
 }
 
-changePage = page => this.setState({activePage: page})
+    changeActivePage = page => this.setState({activePage: page})
     render()
     {
         return (
-                <div className="container-fluid">
-                    <Header changePage={this.changePage}/>
-                    <Main page={this.state.activePage}/>
-                    <Footer/>
-                </div>
+            <div className="container-fluid">
+                <SWContext.Provider value={
+                    {
+                        changePage : this.changeActivePage,
+                        page: this.state.activePage
+                    }
+                }>
+                    <Header/>
+                    <Main/>
+                </SWContext.Provider>
+                <Footer/>
+            </div>
         );
     }
 }
