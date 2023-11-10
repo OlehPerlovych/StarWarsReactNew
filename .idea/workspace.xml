@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="680df8bd-840b-4f91-b88e-f5fa99323ae6" name="Changes" comment="npm i react-router-dom@5">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="680df8bd-840b-4f91-b88e-f5fa99323ae6" name="Changes" comment="Add Router" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +86,7 @@
       <workItem from="1699463064279" duration="388000" />
       <workItem from="1699598341704" duration="932000" />
       <workItem from="1699601490049" duration="808000" />
-      <workItem from="1699602902134" duration="8452000" />
+      <workItem from="1699602902134" duration="8748000" />
     </task>
     <task id="LOCAL-00001" summary="Creating template for new React App.">
       <option name="closed" value="true" />
@@ -301,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699610644331</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Add Router">
+      <option name="closed" value="true" />
+      <created>1699612183777</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1699612183777</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,6 +334,7 @@
     <MESSAGE value="add routing" />
     <MESSAGE value="refactoring of warnings" />
     <MESSAGE value="npm i react-router-dom@5" />
-    <option name="LAST_COMMIT_MESSAGE" value="npm i react-router-dom@5" />
+    <MESSAGE value="Add Router" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Router" />
   </component>
 </project>
