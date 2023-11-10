@@ -4,22 +4,19 @@ import AboutMe from "./AboutMe";
 import StarWars from "./StarWars";
 import Contact from "./contact/Contact";
 import Home from "./Home";
-import {SWContext} from "../utils/context";
+import {Route, Switch} from "react-router-dom";
+import ErrorPage from "./ErrorPage";
 
 const Main = () => {
-    return (
-        <SWContext.Consumer>
-            {value =>
-            {
-                switch(value.page)
-                {
-                    case navItems[1]: return <AboutMe/>
-                    case navItems[2]: return <StarWars/>
-                    case navItems[3]: return <Contact/>
-                    default: return <Home/>
-                }
-            }}
-        </SWContext.Consumer>)
+return(
+    <Switch>
+        <Route path={['/',`/${navItems[0].route}`]} component={Home} exact/>
+        <Route path={`/${navItems[1].route}`} component={AboutMe} exact/>
+        <Route path={`/${navItems[2].route}`} component={StarWars} exact/>
+        <Route path={`/${navItems[3].route}`} component={Contact} exact/>
+        <Route component={ErrorPage}/>
+    </Switch>
+)
 };
 
 export default Main;
