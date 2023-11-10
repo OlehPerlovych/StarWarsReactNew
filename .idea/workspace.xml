@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="680df8bd-840b-4f91-b88e-f5fa99323ae6" name="Changes" comment="add routing">
-      <change beforePath="$PROJECT_DIR$/src/components/NavItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavItem.js" afterDir="false" />
+    <list default="true" id="680df8bd-840b-4f91-b88e-f5fa99323ae6" name="Changes" comment="refactoring of warnings">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +88,7 @@
       <workItem from="1699463064279" duration="388000" />
       <workItem from="1699598341704" duration="932000" />
       <workItem from="1699601490049" duration="808000" />
-      <workItem from="1699602902134" duration="5650000" />
+      <workItem from="1699602902134" duration="7056000" />
     </task>
     <task id="LOCAL-00001" summary="Creating template for new React App.">
       <option name="closed" value="true" />
@@ -274,7 +274,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699608528876</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="refactoring of warnings">
+      <option name="closed" value="true" />
+      <created>1699609122059</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1699609122059</updated>
+    </task>
+    <task id="LOCAL-00025" summary="refactoring of warnings">
+      <option name="closed" value="true" />
+      <created>1699609368966</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1699609368966</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +318,7 @@
     <MESSAGE value="refactor code added constants of name's of items in sessionStorage" />
     <MESSAGE value="move to Hooks" />
     <MESSAGE value="add routing" />
-    <option name="LAST_COMMIT_MESSAGE" value="add routing" />
+    <MESSAGE value="refactoring of warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring of warnings" />
   </component>
 </project>
