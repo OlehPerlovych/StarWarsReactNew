@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="680df8bd-840b-4f91-b88e-f5fa99323ae6" name="Changes" comment="move to Hooks">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe.js" afterDir="false" />
+    <list default="true" id="680df8bd-840b-4f91-b88e-f5fa99323ae6" name="Changes" comment="add routing">
       <change beforePath="$PROJECT_DIR$/src/components/NavItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +88,7 @@
       <workItem from="1699463064279" duration="388000" />
       <workItem from="1699598341704" duration="932000" />
       <workItem from="1699601490049" duration="808000" />
-      <workItem from="1699602902134" duration="5106000" />
+      <workItem from="1699602902134" duration="5650000" />
     </task>
     <task id="LOCAL-00001" summary="Creating template for new React App.">
       <option name="closed" value="true" />
@@ -271,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699599250461</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add routing">
+      <option name="closed" value="true" />
+      <created>1699608528876</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1699608528876</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +301,7 @@
     <MESSAGE value="refactor" />
     <MESSAGE value="refactor code added constants of name's of items in sessionStorage" />
     <MESSAGE value="move to Hooks" />
-    <option name="LAST_COMMIT_MESSAGE" value="move to Hooks" />
+    <MESSAGE value="add routing" />
+    <option name="LAST_COMMIT_MESSAGE" value="add routing" />
   </component>
 </project>
