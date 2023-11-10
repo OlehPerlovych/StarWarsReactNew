@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="680df8bd-840b-4f91-b88e-f5fa99323ae6" name="Changes" comment="refactor code added constants of name's of items in sessionStorage">
+    <list default="true" id="680df8bd-840b-4f91-b88e-f5fa99323ae6" name="Changes" comment="move to Hooks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AboutMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +91,9 @@
       <workItem from="1698767581598" duration="965000" />
       <workItem from="1699446683482" duration="1287000" />
       <workItem from="1699463064279" duration="388000" />
-      <workItem from="1699598341704" duration="788000" />
+      <workItem from="1699598341704" duration="932000" />
+      <workItem from="1699601490049" duration="808000" />
+      <workItem from="1699602902134" duration="5106000" />
     </task>
     <task id="LOCAL-00001" summary="Creating template for new React App.">
       <option name="closed" value="true" />
@@ -258,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698768248864</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="move to Hooks">
+      <option name="closed" value="true" />
+      <created>1699599250461</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1699599250461</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +297,7 @@
     <MESSAGE value="Cookies and sessionStorage in FarGalaxy" />
     <MESSAGE value="refactor" />
     <MESSAGE value="refactor code added constants of name's of items in sessionStorage" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor code added constants of name's of items in sessionStorage" />
+    <MESSAGE value="move to Hooks" />
+    <option name="LAST_COMMIT_MESSAGE" value="move to Hooks" />
   </component>
 </project>

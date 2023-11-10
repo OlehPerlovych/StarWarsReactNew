@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { HERO, period, url } from '../utils/constants';
+import React, {useState, useEffect} from 'react';
+import {HERO, period, url} from '../utils/constants';
 
 function AboutMe() {
     const [heroInfo, setHeroInfo] = useState({
@@ -15,12 +15,11 @@ function AboutMe() {
 
     useEffect(() => {
         const hero = JSON.parse(localStorage.getItem(HERO));
-
         const fetchDataFromAPI = () => {
             fetch(`${url}peoples/1`)
                 .then((response) => response.json())
                 .then((data) => {
-                    localStorage.setItem(HERO, JSON.stringify({ info: data, timeStamp: Date.now() }));
+                    localStorage.setItem(HERO, JSON.stringify({info: data, timeStamp: Date.now()}));
                     setHeroInfo(data);
                 })
                 .catch((error) => alert(error));
