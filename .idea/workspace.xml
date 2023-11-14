@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="680df8bd-840b-4f91-b88e-f5fa99323ae6" name="Changes" comment="refactoring">
+    <list default="true" id="680df8bd-840b-4f91-b88e-f5fa99323ae6" name="Changes" comment=" Refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Friend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Friend.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Friends.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Friends.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavItem.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +101,7 @@
       <workItem from="1699602902134" duration="8867000" />
       <workItem from="1699808715532" duration="27000" />
       <workItem from="1699977280137" duration="68000" />
-      <workItem from="1699977442594" duration="4155000" />
+      <workItem from="1699977442594" duration="9434000" />
     </task>
     <task id="LOCAL-00001" summary="Creating template for new React App.">
       <option name="closed" value="true" />
@@ -337,14 +343,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699981719056</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary=" Refactor">
+      <option name="closed" value="true" />
+      <created>1699982587197</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1699982587197</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding structure of components of the app" />
     <MESSAGE value="Add pictures of the App" />
     <MESSAGE value="Add constants" />
     <MESSAGE value="Head of the App" />
@@ -369,6 +382,7 @@
     <MESSAGE value="Add errorPage" />
     <MESSAGE value="Add Link in Route to change pages" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <MESSAGE value=" Refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Refactor" />
   </component>
 </project>

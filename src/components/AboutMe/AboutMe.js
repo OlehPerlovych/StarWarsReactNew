@@ -41,6 +41,7 @@ const AboutMe = (props) =>
                 .catch(e => console.log(e));
         } else
             setHero(hero.info);
+        props.setHeroFromPath(key);
     }, []);
 
     return (
