@@ -1,17 +1,21 @@
 import React, {useEffect, useState} from 'react';
-import {url, period} from "../../utils/constants";
+import {period, friends, characters, defaultHero} from "../../utils/constants";
 import styles from "./aboutMe.module.css"
 
-const AboutMe = () =>
+const AboutMe = (props) =>
 {
     const [hero, setHero] = useState({});
 
     useEffect(() =>
     {
-        let hero = JSON.parse(localStorage.getItem('hero'));
+        let key = props.match.params.heroId;
+        if(!characters.includes(key))
+            key = defaultHero;
+
+        let hero = JSON.parse(localStorage.getItem(key));
         if (!hero || (Date.now() - hero.time) > period)
         {
-            fetch(`${url}peoples/1`)
+            fetch(friends[key].url)
                 .then(response => response.json())
                 .then(data =>
                 {
@@ -32,7 +36,7 @@ const AboutMe = () =>
                             info,
                             time: Date.now()
                         };
-                    localStorage.setItem('hero', JSON.stringify(hero));
+                    localStorage.setItem(key, JSON.stringify(hero));
                 })
                 .catch(e => console.log(e));
         } else

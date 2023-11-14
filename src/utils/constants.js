@@ -75,6 +75,7 @@ export const friends =
     }
 
 export const characters = Object.keys(friends);
+export const defaultHero = characters[0];
 
 export const navItems = [
     {title : 'Home', route: 'home'},
