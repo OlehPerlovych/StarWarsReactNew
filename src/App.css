@@ -21,14 +21,7 @@ header
 {
     box-shadow: rgba(60, 69, 67, 0.6) 10px 10px;
 }
-.left
-{
-    border-bottom-left-radius: 15px;
-}
-.right
-{
-    border-bottom-right-radius: 15px;
-}
+
 .farGalaxy
 {
     font-size: 2em;
