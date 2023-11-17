@@ -4,17 +4,18 @@ import Friends from "./Friends";
 import FarGalaxy from "./FarGalaxy";
 import {SWContext} from "../utils/context";
 import {characters, defaultHero} from "../utils/constants";
+import {useParams} from "react-router-dom";
 
-const Home = (props) =>
+const Home = () =>
 {
+    let {heroId} = useParams();
     const {setHeroFromPath} = useContext(SWContext);
 
     useEffect(() => {
-        let key = props.match.params.heroId;
-        if(!characters.includes(key))
-            key = defaultHero;
-        setHeroFromPath(key);
-    }, [props]);
+        if(!characters.includes(heroId))
+            heroId = defaultHero;
+        setHeroFromPath(heroId);
+    }, [heroId]);
 
     return (
         <div className="clearfix">
