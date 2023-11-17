@@ -1,28 +1,12 @@
-import React, {useContext, useEffect} from 'react';
+import React from 'react';
 import Hero from "./Hero";
 import Friends from "./Friends";
 import FarGalaxy from "./FarGalaxy";
-import {SWContext} from "../utils/context";
-import {characters, defaultHero, navItems} from "../utils/constants";
-import {useNavigate, useParams} from "react-router-dom";
+import {navItems} from "../utils/constants";
+import {withHeroId} from "../HOC/withHeroId";
 
 const Home = () =>
 {
-    const {setHeroFromPath} = useContext(SWContext);
-    let {heroId} = useParams();
-    const navigate = useNavigate();
-
-    useEffect(() =>
-    {
-        if(!characters.includes(heroId))
-        {
-            navigate(`/${navItems[0].route}/${defaultHero}`);
-            return;
-        }
-
-        setHeroFromPath(heroId);
-    }, [heroId]);
-
     return (
         <div className="clearfix">
             <Hero/>
@@ -32,4 +16,4 @@ const Home = () =>
     );
 };
 
-export default Home;
+export default withHeroId(Home, navItems[0].route);
