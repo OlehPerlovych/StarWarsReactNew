@@ -13,7 +13,7 @@ const Friends = () => {
                 {characters
                     .filter(item => item !== heroFromPath)
                     .map((item, index) => (
-                        <div key={index} className="col-4 mb-3"> {/* Измените размеры колонок в соответствии с вашими требованиями */}
+                        <div key={index} className="col-4 mb-3">
                             <Friend key={index} item={item} pos={index + 1} />
                         </div>
                     ))}

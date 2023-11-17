@@ -14,7 +14,7 @@ const Home = (props) =>
         if(!characters.includes(key))
             key = defaultHero;
         setHeroFromPath(key);
-    }, []);
+    }, [props]);
 
     return (
         <div className="clearfix">

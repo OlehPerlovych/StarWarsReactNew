@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="680df8bd-840b-4f91-b88e-f5fa99323ae6" name="Changes" comment=" Refactor">
+    <list default="true" id="680df8bd-840b-4f91-b88e-f5fa99323ae6" name="Changes" comment=" Refactor of style. All pictures in section  with border">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Friend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Friend.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Friends.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Friends.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,23 +40,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/New/WebstormProjects/StarWarsReactNew/src/components",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "inlay.hints",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/New/WebstormProjects/StarWarsReactNew/src/components&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\New\WebstormProjects\StarWarsReactNew\src\components" />
@@ -96,7 +96,8 @@
       <workItem from="1699808715532" duration="27000" />
       <workItem from="1699977280137" duration="68000" />
       <workItem from="1699977442594" duration="9504000" />
-      <workItem from="1700065764230" duration="2075000" />
+      <workItem from="1700065764230" duration="2503000" />
+      <workItem from="1700206529022" duration="760000" />
     </task>
     <task id="LOCAL-00001" summary="Creating template for new React App.">
       <option name="closed" value="true" />
@@ -354,14 +355,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699988265768</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary=" Refactor of style. All pictures in section  with border">
+      <option name="closed" value="true" />
+      <created>1700067877850</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1700067877850</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add pictures of the App" />
     <MESSAGE value="Add constants" />
     <MESSAGE value="Head of the App" />
     <MESSAGE value="Components and logic of rendering of pages and components" />
@@ -386,6 +394,7 @@
     <MESSAGE value="Add Link in Route to change pages" />
     <MESSAGE value="refactoring" />
     <MESSAGE value=" Refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Refactor" />
+    <MESSAGE value=" Refactor of style. All pictures in section  with border" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Refactor of style. All pictures in section  with border" />
   </component>
 </project>
