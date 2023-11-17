@@ -3,17 +3,23 @@ import Hero from "./Hero";
 import Friends from "./Friends";
 import FarGalaxy from "./FarGalaxy";
 import {SWContext} from "../utils/context";
-import {characters, defaultHero} from "../utils/constants";
-import {useParams} from "react-router-dom";
+import {characters, defaultHero, navItems} from "../utils/constants";
+import {useNavigate, useParams} from "react-router-dom";
 
 const Home = () =>
 {
-    let {heroId} = useParams();
     const {setHeroFromPath} = useContext(SWContext);
+    let {heroId} = useParams();
+    const navigate = useNavigate();
 
-    useEffect(() => {
+    useEffect(() =>
+    {
         if(!characters.includes(heroId))
-            heroId = defaultHero;
+        {
+            navigate(`/${navItems[0].route}/${defaultHero}`);
+            return;
+        }
+
         setHeroFromPath(heroId);
     }, [heroId]);
 

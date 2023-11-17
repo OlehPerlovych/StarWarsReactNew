@@ -1,21 +1,26 @@
 import { useEffect, useState } from 'react';
-import { period, friends, characters, defaultHero } from "../../utils/constants";
-import {useParams } from 'react-router-dom';
+import {period, friends, characters, defaultHero, navItems} from "../../utils/constants";
+import {useNavigate, useParams} from 'react-router-dom';
 import styles from "./aboutMe.module.css";
 
 const AboutMe = ({ setHeroFromPath }) => {
     const { heroId } = useParams();
     const [hero, setHero] = useState(null);
+    const navigate = useNavigate();
 
-    useEffect(() => {
-        let key = heroId;
-        if (!characters.includes(key)) key = defaultHero;
+    useEffect(() =>
+    {
+        if(!characters.includes(heroId))
+        {
+            navigate(`/${navItems[0].route}/${defaultHero}`);
+            return;
+        }
 
         const fetchData = async () => {
             try {
-                let heroData = JSON.parse(localStorage.getItem(key));
+                let heroData = JSON.parse(localStorage.getItem(heroId));
                 if (!heroData || (Date.now() - heroData.time) > period) {
-                    const response = await fetch(friends[key].url);
+                    const response = await fetch(friends[heroId].url);
                     const data = await response.json();
                     const info = {
                         name: data.name,
@@ -32,11 +37,11 @@ const AboutMe = ({ setHeroFromPath }) => {
                         info,
                         time: Date.now()
                     };
-                    localStorage.setItem(key, JSON.stringify(heroData));
+                    localStorage.setItem(heroId, JSON.stringify(heroData));
                 } else {
                     setHero(heroData.info);
                 }
-                setHeroFromPath(key);
+                setHeroFromPath(heroId);
             } catch (error) {
                 console.log(error);
             }
