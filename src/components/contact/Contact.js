@@ -1,66 +1,49 @@
-import React, { useState, useEffect } from 'react';
-import styles from './contact.module.css';
-import { LAST_UPDATE, periodForPlanets, PLANETS, url } from '../../utils/constants';
+import React, {useEffect, useState} from 'react';
+import './contact.module.css';
+import {url, periodForPlanets} from "../../utils/constants";
 
-function Contact() {
-    const [planets, setPlanets] = useState([]);
-    const [lastUpdate, setLastUpdate] = useState(null);
+const Contact = () =>
+{
+    const [planetsArray, setPlanets] = useState(['wait...']);
 
-    useEffect(() => {
-        checkAndUpdatePlanets();
+    useEffect(() =>
+    {
+        let planets = JSON.parse(localStorage.getItem('planets'));
+        if (!planets || (Date.now() - planets.time) > periodForPlanets)
+            fillPlanets(`${url}planets`);
+        else
+            setPlanets(planets.listPlanets);
     }, []);
 
-    const fetchPlanets = () => {
-        fetch(`${url}planets`)
-            .then((response) => response.json())
-            .then((data) => {
-                const planetNames = data.map((planet) => planet.name);
-                localStorage.setItem(PLANETS, JSON.stringify(planetNames));
-                localStorage.setItem(LAST_UPDATE, Date.now().toString());
-                setPlanets(planetNames);
-                setLastUpdate(Date.now());
+    const fillPlanets = url =>
+    {
+        fetch(url)
+            .then(response => response.json())
+            .then(array => array.map(item => item.name))
+            .then(planets =>
+            {
+                setPlanets(planets);
+                let info =
+                    {
+                        listPlanets: planets,
+                        time: Date.now()
+                    };
+                localStorage.setItem('planets', JSON.stringify(info));
             })
-            .catch((error) => alert(error));
-    };
-
-    const checkAndUpdatePlanets = () => {
-        const storedLastUpdate = localStorage.getItem(LAST_UPDATE);
-        if (!storedLastUpdate) {
-            fetchPlanets();
-        } else {
-            const timeDifference = Date.now() - parseInt(storedLastUpdate);
-            if (timeDifference >= periodForPlanets) {
-                fetchPlanets();
-            } else {
-                const storedPlanets = JSON.parse(localStorage.getItem(PLANETS));
-                setPlanets(storedPlanets);
-                setLastUpdate(parseInt(storedLastUpdate));
-            }
-        }
-    };
+    }
 
     return (
         <div>
-            <form className={styles.container}>
+            <form onSubmit={(e) => e.preventDefault()}>
                 <label htmlFor="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name.." className={styles.inputField} />
-
-                <label htmlFor="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name.." className={styles.inputField} />
-
+                <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
                 <label htmlFor="planet">Planet</label>
-                <select id="planet" name="planet" className={styles.inputField}>
-                    {planets.map((planet, index) => (
-                        <option key={index} value={planet}>
-                            {planet}
-                        </option>
-                    ))}
+                <select id="planet" name="planet">{planetsArray.map((item, index) =>
+                    <option value={item} key={index}>{item}</option>)}
                 </select>
-
                 <label htmlFor="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style={{ height: '200px' }} className={styles.inputField}></textarea>
-
-                <input className='btn btn-danger border border-light rounded-pill mx-1 common-button' value="Submit" onClick={() => alert('Button')} />
+                <textarea id="subject" name="subject" placeholder="Write something.."/>
+                <input type="submit" value="Submit"/>
             </form>
         </div>
     );
